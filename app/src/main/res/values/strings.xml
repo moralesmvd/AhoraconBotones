@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Registro de usuario</string>
+    <string name="Titulo_1">Bienvenido, ingrese sus datos</string>
+    <string name="TxtHint">Seleccione su fecha de nacimiento</string>
+    <string name="feedbacktitle">Ingrese su nombre</string>
+    <string name="feedbackname">Nombre y apellido</string>
+    <string name="phonenumber">Ingrese su numero telefonico</string>
+    <string name="useremail">xxx@tuemail.com</string>
+    <string name="fullname">Telefono</string>
+    <string name="descripcion">Descripción</string>
+    <string name="mamail">Ingrese su email</string>
+
+
+</resources>

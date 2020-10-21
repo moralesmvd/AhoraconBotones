@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Formulario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/TextViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/feedbacktitle"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+            <EditText
+                android:id="@+id/EditTextName"
+                android:layout_height="wrap_content"
+                android:hint="@string/feedbackname"
+                android:inputType="textPersonName"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese fecha de Nacimiento"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:hint="@string/TxtHint"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/TextViewPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fullname"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+            <EditText
+                android:id="@+id/EditPhone"
+                android:layout_height="wrap_content"
+                android:hint="@string/phonenumber"
+                android:inputType="textPhonetic"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mamail"
+                android:textSize="20sp"
+                android:textStyle="bold">
+            </TextView>
+            <EditText
+                android:id="@+id/Editemail"
+                android:layout_height="wrap_content"
+                android:hint="@string/useremail"
+                android:inputType="textEmailAddress"
+                android:layout_width="fill_parent"
+                android:textStyle="bold">
+            </EditText>
+
+            <EditText
+                android:id="@+id/EditTextFeedbackBody"
+                android:layout_height="wrap_content"
+                android:hint="@string/descripcion"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:layout_width="fill_parent">
+            </EditText>
+
+            <Button
+                android:id="@+id/Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@android:dimen/app_icon_size"
+                android:onClick="@android:string/ok"
+                android:text="Siguiente"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
